@@ -1,0 +1,92 @@
+
+
+.clickImage {
+
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(.35rem .35rem .4rem rgba(0,0,0,.4));
+  cursor: pointer;
+
+  min-height: 250px;
+  background-size: cover;
+  /* background-position-x: -15px; */
+  background-repeat: no-repeat;
+
+
+
+}
+
+
+.revealBox {
+
+
+  height: 100%;
+  width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+ font-weight: 500;
+
+  background-color: rgba(255, 255, 255, .8);
+  position: absolute;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+
+
+}
+
+
+
+#pageText1 {
+
+  margin-bottom: 10px;
+
+}
+
+
+#pageText2 {
+
+  margin-top: 20px;
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .clickImage {
+
+    background-position-x: 0;
+    background-position-y: -120px;
+
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .clickImage {
+
+    background-position-x: 0;
+    background-position-y: -30px;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 510px) {
+
+  .clickImage {
+
+    background-position-x: 0;
+    background-position-y: 0px;
+
+  }
+
+}

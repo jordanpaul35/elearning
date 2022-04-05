@@ -1,0 +1,28 @@
+
+
+.mainTitle {
+
+
+  font-size:55px;
+  font-weight: bold;
+  color: var(--darkGreen);
+  margin-bottom: 10px;
+  line-height: 1;
+
+}
+
+
+.pinkBar {
+
+  background-color: var(--pink);
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 23px;
+  font-style: italic;
+   
+
+}

@@ -1,0 +1,355 @@
+
+html {
+
+  --lightBlue: #57bdd9;
+  --darkBlue: #263847;
+  --pink: #e80149;
+  --darkGreen: #263847;
+
+}
+
+/* prevents blue highlights */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+
+
+body {
+
+  /* height: 100vh;
+  min-height: 100vh; */
+
+  overflow-x: hidden;
+
+}
+
+
+.container {
+
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  
+}
+
+
+.mainContentHolder {
+
+ /* min-height: calc(100% - 180px); */
+ min-height: calc(100% - 100px);
+ padding-bottom: 100px;
+ margin-top: 10px;
+
+ flex-direction: column;
+
+ /* top: -85px; */
+ /* position: relative; */
+ /* min-height: 100%; */
+}
+
+/* .mainContentRow {
+
+  height: 100%;
+
+
+} */
+
+
+.centerThis {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.horizontalCenter {
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+
+}
+
+
+
+.nextBtn {
+
+  width:60px;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  background: white;
+  border: 3px solid var(--lightBlue);
+  border-radius: 50%;
+  height:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--lightBlue);
+  padding-left: 2px;
+  margin-right:5%;
+
+}
+
+.prevBtn {
+
+  width:60px;
+  height:60px;
+  cursor: pointer;
+  left:0;
+  position: absolute;
+  background: #FFFFFF;
+  border: 3px solid var(--lightBlue);
+  border-radius: 50%;
+  height:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--lightBlue);
+  padding-right: 2px;
+  margin-left:5%;
+
+
+}
+
+.disabledArrow {
+
+  pointer-events: none;
+
+}
+
+.disabled {
+
+  pointer-events: none;
+  opacity: .3;
+
+}
+
+
+.footer {
+
+  width: 100% !important;
+  /* padding: 0px 20px 0px 20px; */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: fixed; 
+  bottom: 0; 
+   background-color: white;
+   z-index: 100;
+
+}
+
+
+.progressMeter {
+
+  height: 5px;
+  width: 70%;
+  background-color: #CCCCCC;
+
+}
+
+.progressMeterFill {
+
+  height: 5px;
+  width: 0%;
+  background-color: var(--lightBlue);
+
+}
+
+.headerBgImage{
+
+  background-size: 100%;
+  background-image: url("../images/vector-decoration-50.png");
+  background-repeat: no-repeat;
+  background-color: transparent !important;
+  background-position-y: -20px;
+  opacity: .5;
+  width: 100%;
+  height: 85px;
+  position: absolute;
+
+}
+
+
+.headerBg{
+
+  height: 85px;
+  width: 100%;
+  
+  
+}
+
+.headerStripe {
+
+  width: 100%;
+  height: 10px;
+  background-color: var(--lightBlue);
+  margin-top: 36px;
+
+}
+
+.logoText {
+
+  text-align: center;
+  font-size: 17px;
+  color: var(--pink);
+
+}
+
+.logoText span{
+
+  color: var(--darkBlue);
+  font-size: 15px !important;
+   font-weight: bold;
+
+
+}
+
+
+
+.logo {
+
+  width:162px;
+
+
+}
+
+.logoContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 10px;
+  position: absolute;
+  border: 2px solid var(--lightBlue);
+  right: 0px; 
+  top: -10px; 
+  width: 220px !important;
+  
+
+
+}
+
+
+
+
+/* main styles */
+
+
+.pageText {
+
+  padding-left:40px;
+  padding-right:40px;
+  font-size:18px;
+
+}
+
+/* .pageText span {
+
+  font-weight: bold;
+  text-decoration: underline;
+
+} */
+
+.pageTitle {
+
+  padding-left:40px;
+  font-size:40px;
+  color: var(--pink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+  margin-top:10px;
+
+}
+
+
+
+.titleIcon {
+
+  position: absolute;
+
+
+}
+
+.textHasIcon {
+
+  padding-left: 60px;
+
+}
+
+
+.blueBtn {
+
+  background-color: var(--darkBlue);
+  min-width: 100px;
+  max-width: 200px;
+  text-align: center;
+  padding:10px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+
+  margin-top: 25px;
+
+
+}
+
+
+
+
+@media only screen and (max-width: 990px) {
+
+  .progressMeter {
+
+    width: 60%;
+
+  }
+
+  .pageText, .pageTitle {
+
+    padding: 0;
+
+  }
+
+  .textHasIcon {
+
+    padding-left: 60px !important;
+
+  }
+
+  .addTopMargin {
+    margin-top: 20px;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .progressMeter {
+
+    width: 50%;
+
+  }
+
+
+
+}
+
+

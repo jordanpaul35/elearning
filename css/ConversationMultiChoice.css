@@ -1,0 +1,379 @@
+
+.character {
+
+  clip-path: inset(0px 0px 300px 0px);
+  float:right;
+
+
+}
+
+
+.characterHolder {
+
+
+  height: 456px;
+  overflow: hidden;
+  z-index: 100;
+
+}
+
+
+
+
+
+
+
+.speechBubbleLeft, .speechBubbleUp {
+  position: absolute;
+  min-width: 100px;
+  min-height: 50px;
+  padding: 20px;
+  background: #FFFFFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: #7F7F7F solid 1px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* left: 200px */
+
+  margin-top:50px;
+
+}
+
+.speechBubbleLeft:after {
+
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-top: -15px;
+  left: -15px;
+  top: 50%;
+
+}
+
+.speechBubbleLeft:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #7F7F7F;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-top: -15px;
+  left: -16px;
+  top: 50%;
+
+}
+
+
+
+.speechBubbleUp {
+
+  display: none ;
+
+}
+
+
+
+/* .speechBubbleUp {
+
+position: relative;
+width: 250px;
+height: 120px;
+padding: 0px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #7F7F7F solid 1px;
+
+} */
+
+.speechBubbleUp:after {
+
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 15px;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+top: -15px;
+/* left: 110px; */
+left:43%;
+
+}
+
+.speechBubbleUp:before{
+
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 15px;
+border-color: #7F7F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+top: -16px;
+/* left: 110px; */
+left:43%;
+
+}
+
+/* .btnRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+
+
+.optionHolder {
+
+  /* min-height: 100px;
+  width: 100%; */
+  width: 100%;
+  position: absolute;
+  bottom: 25%;
+  /* bottom: 25%; */
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+  background-color: var(--lightBlue);
+  padding: 20px 0 20px 25% !important;
+
+  /* min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding-left: 250px !important;
+  bottom: 25%;
+
+  position: absolute;
+  z-index: 100;
+   */
+  /* position: absolute; 
+   bottom:25%; */
+
+
+   /* padding-left: 250px !important; */
+   /* background-color: darkorchid; */
+  
+
+
+}
+
+.optionHolder  .blueBtn {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 20px  */
+height: 100%;
+
+ width: 100%;
+margin-top: 0px; 
+}
+
+
+/* .optionBlueBar { */
+
+
+  /* min-height: 100px; */
+  /* width: 100%; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* background-color: var(--lightBlue); */
+  /* position: absolute; */
+  /* bottom:25%; */
+  /* z-index: -20; */
+
+  /* position: absolute; 
+  bottom:25%; */
+
+  /* position: absolute;
+  bottom: 0; */
+  /* min-height: 100%; */
+
+
+
+/* } */
+
+/* .optionsAndBlueBarContainer{ */
+
+  /* position: absolute;
+  bottom:25%; */
+  /* margin-bottom: 25%; */
+
+  /* position: relative; */
+
+/* } */
+
+
+.questionTitle{
+
+  position: absolute;
+  bottom: 43%;
+
+
+  /* text-align: center; */
+  /* position: absolute; */
+  /* top: -33px; */
+  width: 100%;
+
+
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  .characterHolder {
+
+    display: flex;
+    justify-content: center;
+
+    clip-path: circle(60px at 50% 14%);
+
+    background-color: black;
+
+  }
+
+  .character {
+
+    clip-path: circle(58px at 50% 14%);
+    height: 130%; 
+    margin-top: -19px;
+    padding-top: 17px;
+    background-color: white;
+    
+    border: 10ppx solid black;
+
+
+  }
+
+  .speechBubbleHolder {
+
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    top: 200px;
+    position: absolute;
+
+   
+
+  }
+
+
+  .speechBubbleUp {
+
+    display: block !important; 
+  
+  }
+
+  .speechBubbleLeft {
+
+    display: none !important;
+  
+  }
+
+  .optionHolder {
+
+    padding: 10px 0px 10px 0px !important;
+
+  }
+
+
+  .optionHolder  .blueBtn {
+
+    min-width: 100%
+    
+
+
+  }
+
+  /* .optionHolder {
+
+    padding-left:0 !important;
+    width: 100%;
+
+  }
+
+
+  .optionHolder  .blueBtn {
+
+    width: 100%;
+    max-width: none;
+    
+    }
+     */
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .optionHolder  .blueBtn {
+
+    /* margin-top: 0 !important; */
+    height: auto !important;
+    margin: 5px 0 5px 0;
+
+  }
+
+
+  .questionTitle {
+
+    bottom: 37%;
+
+  }
+
+  .optionHolder {
+
+    bottom: 0%;
+
+    /* position: relative; */
+    /* bottom: 0; */
+    /* padding-bottom: 100px; */
+
+  }
+
+
+  .mainContentHolder {
+
+
+    padding-bottom: 150px;
+
+
+  }
+
+  /* .character {
+
+    clip-path: inset(0px 0px 800px 0px);
+  
+  
+  } */
+
+
+
+}

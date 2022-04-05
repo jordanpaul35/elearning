@@ -1,0 +1,104 @@
+.revealBtn {
+
+  background-color: var(--pink);
+  width: 100%;
+
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+
+  display: block;
+  margin: 15px 0px 15px 0px;
+  cursor: pointer;
+  min-width: 350px;
+   
+
+}
+
+
+.revealCheck {
+  font-size: 32px;
+  color: white;
+  border: 1p;
+  stroke: black;
+  stroke-width: 30;
+  position: absolute;
+  right:-10px;
+  top: -12px;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  
+
+}
+
+.btnHolder {
+
+  display: flex;
+  flex-direction: column;
+  
+
+
+}
+
+
+
+
+
+
+.fb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, .5);
+  /* min-height: 100%;
+  min-width: 100%; */
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+
+.fbBox {
+
+  background-color: var(--lightBlue);
+  padding: 50px 50px 25px 50px;
+  color: black;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  width: 100%;
+  font-size: 17px;
+
+}
+
+
+.fbBox h4 {
+
+  margin-bottom: 20px;
+
+}
+
+
+#fbClose {
+
+  float:right;
+
+}
+
+/* 
+@media only screen and (max-width: 990px) {
+
+  .btnHolder {
+    margin-top: 20px;
+
+  }
+
+
+
+} */

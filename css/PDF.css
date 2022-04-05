@@ -1,0 +1,23 @@
+
+
+.pdfImage {
+
+  max-height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(.35rem .35rem .4rem rgba(0,0,0,.4));
+  transform: rotate(5deg);;
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  #downloadActivity {
+
+    margin-bottom: 20px;
+
+  }
+
+}

@@ -1,0 +1,21 @@
+
+.textImage {
+
+  /* max-height: 400px; */
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  filter: drop-shadow(.35rem .35rem .4rem rgba(0,0,0,.4));
+
+}
+
+
+
+.reverse {
+
+  flex-direction: row-reverse;
+
+
+}
+
